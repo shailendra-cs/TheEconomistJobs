@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 29,
+        "name": "Create account link Test Scenario",
+        "description": "",
+        "id": "the-economist-sign-in-feature;create-account-link-test-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12949034200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is already on Home Page of Jobs",
+            "match": {
+              "location": "CreateNewAccount.user_is_already_on_Home_Page_of_Jobs()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1648425300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks on Create account link",
+            "match": {
+              "location": "CreateNewAccount.user_clicks_on_Create_account_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35967900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user is on Create account page",
+            "match": {
+              "location": "CreateNewAccount.user_is_on_Create_account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1090880200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enters new account details \"Mr.\" and \"Shailendra\" and \"Rajput\" and \"cool.shailendra@yahoo.com\" and \"test@123\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr.",
+                  "offset": 33
+                },
+                {
+                  "val": "Shailendra",
+                  "offset": 43
+                },
+                {
+                  "val": "Rajput",
+                  "offset": 60
+                },
+                {
+                  "val": "cool.shailendra@yahoo.com",
+                  "offset": 73
+                },
+                {
+                  "val": "test@123",
+                  "offset": 105
+                },
+                {
+                  "val": "test@123",
+                  "offset": 120
+                }
+              ],
+              "location": "CreateNewAccount.user_enters_new_account_details(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1947856700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on Create an account button",
+            "match": {
+              "location": "CreateNewAccount.user_clicks_on_Create_an_account_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29077100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Verify user account get created",
+            "match": {
+              "location": "CreateNewAccount.verify_user_account_get_created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 916220700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on Sign Out link",
+            "match": {
+              "location": "CreateNewAccount.user_clicks_on_Sign_out_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 719996900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Close the browser",
+            "match": {
+              "location": "CreateNewAccount.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Sign In link Test Scenario",
+        "description": "",
+        "id": "the-economist-sign-in-feature;sign-in-link-test-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11008141800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user is already on Home Page of Jobs",
+            "match": {
+              "location": "CreateNewAccount.user_is_already_on_Home_Page_of_Jobs()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1042276800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user clicks on Sign in link",
+            "match": {
+              "location": "CreateNewAccount.user_clicks_on_Sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 210332700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user enters Sign in details \"cool.shailendra@yahoo.com\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cool.shailendra@yahoo.com",
+                  "offset": 29
+                },
+                {
+                  "val": "test@123",
+                  "offset": 61
+                }
+              ],
+              "location": "CreateNewAccount.user_enters_Sign_in_details_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85634700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks on Sign in button",
+            "match": {
+              "location": "CreateNewAccount.user_clicks_on_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 683183700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Close the browser",
+            "match": {
+              "location": "CreateNewAccount.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The Economist Sign In Feature",
+    "description": "",
+    "id": "the-economist-sign-in-feature",
+    "keyword": "Feature",
+    "uri": "D:/Shailendra/TheEconomistBDD/src/main/java/Features/login.feature"
+  }
+]
