@@ -13,7 +13,7 @@ Feature: The Economist Jobs Page navigation bar links
 #with Examples Keyword
 
 
-Scenario Outline: Jobs Page navigation bar links Test Scenario
+Scenario Outline: Jobs Home Page navigation bar links Test
 
 Given user is already logged on Home Page of Jobs
 When user clicks on Find a job link
@@ -24,5 +24,4 @@ Then user clicks on Search recruiters link
 Then user is redirected to the Search Recruiters page
 Then user clicks on Jobs blog link 
 Then user redirected to Jobs blog page
-Then Close the browser
-
+Then Close the browser	
