@@ -15,8 +15,11 @@ Feature: The Economist Jobs Page navigation bar links
 
 Scenario Outline: Jobs Home Page navigation bar links Test
 
-Given user is already logged on Home Page of Jobs
-When user clicks on Find a job link
+Given user is already on Home Page of Jobs 
+When user clicks on Sign in link
+Then user enters Sign in details "<email>" and "<password>"
+Then user clicks on Sign in button
+Then user clicks on Find a job link
 Then user is redirected to the jobs page
 Then user clicks on Jobs alerts link
 Then user is redirected to the alerts page
@@ -24,4 +27,9 @@ Then user clicks on Search recruiters link
 Then user is redirected to the Search Recruiters page
 Then user clicks on Jobs blog link 
 Then user redirected to Jobs blog page
-Then Close the browser	
+Then Close the browser
+
+Examples:
+| email | password |
+| cool.shailendra@yahoo.com | test@123 |
+ 

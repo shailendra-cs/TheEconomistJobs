@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -107,6 +106,53 @@ public void user_enters_Sign_in_details_and(String email, String password) {
 public void user_clicks_on_Sign_in_button() {
 	driver.findElement(By.xpath("//div[contains(@class,'field float-right')]//input[contains(@class,'button button--brand')]")).click();
 	
+}
+
+
+@Then("^user clicks on Find a job link$")
+public void user_clicks_on_Find_a_job_link() {
+	driver.findElement(By.xpath("//a[contains(text(),'Find a job')]")).click();
+		}
+		
+		
+@Then("^user is redirected to the jobs page$")
+public void user_is_redirected_to_the_jobs_page() {
+	String jobsLabel = driver.findElement(By.xpath("//h1[contains(text(),'Found 27 jobs')]")).getText();
+	Assert.assertEquals("Found 27 jobs", jobsLabel);
+}
+
+@Then("^user clicks on Jobs alerts link$")
+public void user_clicks_on_Jobs_alerts_link() {
+	driver.findElement(By.xpath("//a[contains(text(),'Job alerts')]")).click();
+}
+
+@Then("^user is redirected to the alerts page$")
+public void user_is_redirected_to_the_alerts_page() {
+	String alertLabel = driver.findElement(By.xpath("//h1[contains(text(),'Create a job alert')]")).getText();
+	Assert.assertEquals("Create a job alert", alertLabel);
+}
+		
+@Then("^user clicks on Search recruiters link$") 
+public void user_clicks_on_Search_recruiters_link() {
+	driver.findElement(By.xpath("//a[contains(text(),'Search recruiters')]")).click();
+}
+		
+@Then("^user is redirected to the Search Recruiters page$")
+public void user_is_redirected_to_the_Search_Recruiters_page() {
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/employers/", Label);
+}
+
+		
+@Then("^user clicks on Jobs blog link$") 
+		public void user_clicks_on_Jobs_blog_link() {
+	driver.findElement(By.xpath("//a[contains(text(),'Jobs blog')]")).click();
+}
+		
+@Then("^user redirected to Jobs blog page$")
+public void user_is_redirected_to_the_Jobs_blog_page() {
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/careers/", Label);
 }
 
 //@Then ("^Verify the user signed in$")

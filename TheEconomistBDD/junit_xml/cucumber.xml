@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.621236">
+<testcase classname="The Economist Jobs Page navigation bar links" name="Jobs Home Page navigation bar links Test" time="21.621236">
+<system-out><![CDATA[Given user is already on Home Page of Jobs..................................passed
+When user clicks on Sign in link............................................passed
+Then user enters Sign in details "cool.shailendra@yahoo.com" and "test@123".passed
+Then user clicks on Sign in button..........................................passed
+Then user clicks on Find a job link.........................................passed
+Then user is redirected to the jobs page....................................passed
+Then user clicks on Jobs alerts link........................................passed
+Then user is redirected to the alerts page..................................passed
+Then user clicks on Search recruiters link..................................passed
+Then user is redirected to the Search Recruiters page.......................passed
+Then user clicks on Jobs blog link..........................................passed
+Then user redirected to Jobs blog page......................................passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
