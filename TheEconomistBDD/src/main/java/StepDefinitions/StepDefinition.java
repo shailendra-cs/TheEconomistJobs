@@ -13,7 +13,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class CreateNewAccount {
+public class StepDefinition {
 	
 	WebDriver driver;
 
@@ -86,7 +86,6 @@ public void close_the_browser(){
 
 
 
-
 @When("^user clicks on Sign in link$") 
 public void user_clicks_on_Sign_in_link()  { 
 		driver.findElement(By.linkText("Sign in")).click();
@@ -155,6 +154,90 @@ public void user_is_redirected_to_the_Jobs_blog_page() {
 	Assert.assertEquals("https://jobs.economist.com/careers/", Label);
 }
 
+
+@Then("^user clicks on About us link$")
+public void user_clicks_on_About_us_link() {
+	
+	driver.findElement(By.xpath("//a[@href='/about-us/']")).click();
+    
+}
+
+@Then("^user is redirected to About us page$")
+public void user_is_redirected_to_About_us_page() {
+    
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("About us", Label);
+}
+
+@Then("^user clicks on Contact us link$")
+public void user_clicks_on_Contact_us_link() {
+    
+	driver.findElement(By.linkText("Contact us")).click();
+   
+}
+
+@Then("^user is redirected to Contact us page$")
+public void user_is_redirected_to_Contact_us_page() {
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("Contact us", Label);
+   
+}
+
+@Then("^user clicks on Terms and conditions link$")
+public void user_clicks_on_Terms_and_conditions_link() {
+    
+	driver.findElement(By.linkText("Terms and conditions")).click();
+}
+
+@Then("^user is redirected to Terms and conditions page$")
+public void user_is_redirected_to_Terms_and_conditions_page() {
+
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("Terms and conditions", Label); 
+   
+}
+
+@Then("^user clicks on Privacy policy link$")
+public void user_clicks_on_Privacy_policy_link() {
+    
+	driver.findElement(By.linkText("Privacy policy")).click();
+}
+
+@Then("^user is redirected to Privacy policy page$")
+public void user_is_redirected_to_Privacy_policy_page() {
+    
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("Privacy policy", Label); 
+}
+
+@Then("^user clicks on Refund policy link$")
+public void user_clicks_on_Refund_policy_link() {
+    
+	driver.findElement(By.linkText("Refund policy")).click();
+   
+}
+
+@Then("^user is redirected to Refund policy page$")
+public void user_is_redirected_to_Refund_policy_page() {
+    
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("Refund policy", Label); 
+   
+}
+
+@Then("^user clicks on Help link$")
+public void user_clicks_on_Help_link() {
+    
+	driver.findElement(By.linkText("Help")).click();
+}
+
+@Then("^user is redirected to Help page$")
+public void user_is_redirected_to_Help_page() {
+    
+	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
+	Assert.assertEquals("Help", Label); 
+   
+}
 //@Then ("^Verify the user signed in$")
 //public void Verify_the_user_signed_in() {
 //	String label3 = driver.findElement(By.xpath("//span[contains(@class,'user-nav__triangle icon-after')]")).getText();

@@ -1,163 +1,218 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/links.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/footerLinks.feature");
 formatter.feature({
-  "line": 1,
-  "name": "The Economist Jobs Page navigation bar links",
-  "description": "",
-  "id": "the-economist-jobs-page-navigation-bar-links",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
   "comments": [
     {
+      "line": 1,
+      "value": "#Author: your.email@your.domain.com"
+    },
+    {
+      "line": 2,
+      "value": "#Keywords Summary :"
+    },
+    {
+      "line": 3,
+      "value": "#Feature: List of scenarios."
+    },
+    {
       "line": 4,
-      "value": "#without Examples Keyword"
+      "value": "#Scenario: Business rule through list of steps with arguments."
     },
     {
       "line": 5,
-      "value": "#Scenario: Jobs Sign In Test Scenario"
+      "value": "#Given: Some precondition step"
     },
     {
       "line": 6,
-      "value": "#"
+      "value": "#When: Some key actions"
     },
     {
       "line": 7,
-      "value": "#Given user is already on Home Page of Jobs"
+      "value": "#Then: To observe outcomes or validation"
     },
     {
       "line": 8,
-      "value": "#When title of home page is Jobs.Economist.com | jobs | Choose from 28 live vacancies"
+      "value": "#And,But: To enumerate more Given,When,Then steps"
     },
     {
       "line": 9,
-      "value": "#When user clicks on Sign in link"
+      "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
     },
     {
       "line": 10,
-      "value": "#Then user is on Sign In page"
+      "value": "#Examples: Container for s table"
+    },
+    {
+      "line": 11,
+      "value": "#Background: List of steps run before each of the scenarios"
+    },
+    {
+      "line": 12,
+      "value": "#\"\"\" (Doc Strings)"
     },
     {
       "line": 13,
-      "value": "#with Examples Keyword"
+      "value": "#| (Data Tables)"
+    },
+    {
+      "line": 14,
+      "value": "#@ (Tags/Labels):To group Scenarios"
+    },
+    {
+      "line": 15,
+      "value": "#\u003c\u003e (placeholder)"
+    },
+    {
+      "line": 16,
+      "value": "#\"\""
+    },
+    {
+      "line": 17,
+      "value": "## (Comments)"
+    },
+    {
+      "line": 18,
+      "value": "#Sample Feature Definition Template"
     }
   ],
-  "line": 16,
-  "name": "Jobs Home Page navigation bar links Test",
+  "line": 21,
+  "name": "The Economist Jobs Page footer bar links",
   "description": "",
-  "id": "the-economist-jobs-page-navigation-bar-links;jobs-home-page-navigation-bar-links-test",
+  "id": "the-economist-jobs-page-footer-bar-links",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 23,
+  "name": "Jobs Page footer links Test",
+  "description": "",
+  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 18,
+  "line": 25,
   "name": "user is already on Home Page of Jobs",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 19,
+  "line": 26,
   "name": "user clicks on Sign in link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 27,
   "name": "user enters Sign in details \"\u003cemail\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 28,
   "name": "user clicks on Sign in button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
-  "name": "user clicks on Find a job link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "user is redirected to the jobs page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "user clicks on Jobs alerts link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 25,
-  "name": "user is redirected to the alerts page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "user clicks on Search recruiters link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user is redirected to the Search Recruiters page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "user clicks on Jobs blog link",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 29,
-  "name": "user redirected to Jobs blog page",
+  "name": "user clicks on About us link",
   "keyword": "Then "
 });
 formatter.step({
   "line": 30,
-  "name": "Close the browser",
+  "name": "user is redirected to About us page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "user clicks on Contact us link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "user is redirected to Contact us page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "user clicks on Terms and conditions link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "user is redirected to Terms and conditions page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "user clicks on Privacy policy link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "user is redirected to Privacy policy page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "user clicks on Refund policy link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "user is redirected to Refund policy page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "user clicks on Help link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "user is redirected to Help page",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 32,
+  "line": 43,
   "name": "",
   "description": "",
-  "id": "the-economist-jobs-page-navigation-bar-links;jobs-home-page-navigation-bar-links-test;",
+  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;",
   "rows": [
     {
       "cells": [
         "email",
         "password"
       ],
-      "line": 33,
-      "id": "the-economist-jobs-page-navigation-bar-links;jobs-home-page-navigation-bar-links-test;;1"
+      "line": 44,
+      "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;1"
     },
     {
       "cells": [
         "cool.shailendra@yahoo.com",
         "test@123"
       ],
-      "line": 34,
-      "id": "the-economist-jobs-page-navigation-bar-links;jobs-home-page-navigation-bar-links-test;;2"
+      "line": 45,
+      "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 34,
-  "name": "Jobs Home Page navigation bar links Test",
+  "line": 45,
+  "name": "Jobs Page footer links Test",
   "description": "",
-  "id": "the-economist-jobs-page-navigation-bar-links;jobs-home-page-navigation-bar-links-test;;2",
+  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 18,
+  "line": 25,
   "name": "user is already on Home Page of Jobs",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 19,
+  "line": 26,
   "name": "user clicks on Sign in link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 27,
   "name": "user enters Sign in details \"cool.shailendra@yahoo.com\" and \"test@123\"",
   "matchedColumns": [
     0,
@@ -166,67 +221,82 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 28,
   "name": "user clicks on Sign in button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
-  "name": "user clicks on Find a job link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "user is redirected to the jobs page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "user clicks on Jobs alerts link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 25,
-  "name": "user is redirected to the alerts page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "user clicks on Search recruiters link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user is redirected to the Search Recruiters page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "user clicks on Jobs blog link",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 29,
-  "name": "user redirected to Jobs blog page",
+  "name": "user clicks on About us link",
   "keyword": "Then "
 });
 formatter.step({
   "line": 30,
-  "name": "Close the browser",
+  "name": "user is redirected to About us page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "user clicks on Contact us link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "user is redirected to Contact us page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "user clicks on Terms and conditions link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "user is redirected to Terms and conditions page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "user clicks on Privacy policy link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "user is redirected to Privacy policy page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "user clicks on Refund policy link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "user is redirected to Refund policy page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "user clicks on Help link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "user is redirected to Help page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CreateNewAccount.user_is_already_on_Home_Page_of_Jobs()"
+  "location": "StepDefinition.user_is_already_on_Home_Page_of_Jobs()"
 });
 formatter.result({
-  "duration": 15336226500,
+  "duration": 13863845400,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Sign_in_link()"
+  "location": "StepDefinition.user_clicks_on_Sign_in_link()"
 });
 formatter.result({
-  "duration": 866557300,
+  "duration": 895777000,
   "status": "passed"
 });
 formatter.match({
@@ -240,80 +310,92 @@ formatter.match({
       "offset": 61
     }
   ],
-  "location": "CreateNewAccount.user_enters_Sign_in_details_and(String,String)"
+  "location": "StepDefinition.user_enters_Sign_in_details_and(String,String)"
 });
 formatter.result({
-  "duration": 188837400,
+  "duration": 205936000,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Sign_in_button()"
+  "location": "StepDefinition.user_clicks_on_Sign_in_button()"
 });
 formatter.result({
-  "duration": 62735700,
+  "duration": 1320203400,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Find_a_job_link()"
+  "location": "StepDefinition.user_clicks_on_About_us_link()"
 });
 formatter.result({
-  "duration": 1889760700,
+  "duration": 1675912800,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_is_redirected_to_the_jobs_page()"
+  "location": "StepDefinition.user_is_redirected_to_About_us_page()"
 });
 formatter.result({
-  "duration": 427304400,
-  "status": "passed"
+  "duration": 10049129300,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h1[@class\u003d\u0027strip no-margin\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.135)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P16BA6F\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\SHAILE~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: c1430efd685901f8088f9f3378052916\n*** Element info: {Using\u003dxpath, value\u003d//h1[@class\u003d\u0027strip no-margin\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinitions.StepDefinition.user_is_redirected_to_About_us_page(StepDefinition.java:168)\r\n\tat ✽.Then user is redirected to About us page(C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/footerLinks.feature:30)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Jobs_alerts_link()"
+  "location": "StepDefinition.user_clicks_on_Contact_us_link()"
 });
 formatter.result({
-  "duration": 315025800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_is_redirected_to_the_alerts_page()"
+  "location": "StepDefinition.user_is_redirected_to_Contact_us_page()"
 });
 formatter.result({
-  "duration": 289625400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Search_recruiters_link()"
+  "location": "StepDefinition.user_clicks_on_Terms_and_conditions_link()"
 });
 formatter.result({
-  "duration": 397296100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_is_redirected_to_the_Search_Recruiters_page()"
+  "location": "StepDefinition.user_is_redirected_to_Terms_and_conditions_page()"
 });
 formatter.result({
-  "duration": 108179800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_clicks_on_Jobs_blog_link()"
+  "location": "StepDefinition.user_clicks_on_Privacy_policy_link()"
 });
 formatter.result({
-  "duration": 524951600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.user_is_redirected_to_the_Jobs_blog_page()"
+  "location": "StepDefinition.user_is_redirected_to_Privacy_policy_page()"
 });
 formatter.result({
-  "duration": 266553200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "CreateNewAccount.close_the_browser()"
+  "location": "StepDefinition.user_clicks_on_Refund_policy_link()"
 });
 formatter.result({
-  "duration": 948182600,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinition.user_is_redirected_to_Refund_policy_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinition.user_clicks_on_Help_link()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinition.user_is_redirected_to_Help_page()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });
