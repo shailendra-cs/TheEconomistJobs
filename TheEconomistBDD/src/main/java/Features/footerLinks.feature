@@ -38,6 +38,7 @@ Then user clicks on Refund policy link
 Then user is redirected to Refund policy page
 Then user clicks on Help link
 Then user is redirected to Help page
+Then Close the browser
 
 
 Examples:

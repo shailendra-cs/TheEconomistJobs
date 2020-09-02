@@ -165,77 +165,78 @@ public void user_clicks_on_About_us_link() {
 @Then("^user is redirected to About us page$")
 public void user_is_redirected_to_About_us_page() {
     
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("About us", Label);
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/about-us/", Label);
+	
 }
 
 @Then("^user clicks on Contact us link$")
 public void user_clicks_on_Contact_us_link() {
     
-	driver.findElement(By.linkText("Contact us")).click();
+	driver.findElement(By.xpath("//a[@href='/contact-us/']")).click();
    
 }
 
 @Then("^user is redirected to Contact us page$")
 public void user_is_redirected_to_Contact_us_page() {
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("Contact us", Label);
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/contact-us/", Label);
    
 }
 
 @Then("^user clicks on Terms and conditions link$")
 public void user_clicks_on_Terms_and_conditions_link() {
     
-	driver.findElement(By.linkText("Terms and conditions")).click();
+	driver.findElement(By.xpath("//a[@href='/terms-and-conditions/']")).click();
 }
 
 @Then("^user is redirected to Terms and conditions page$")
 public void user_is_redirected_to_Terms_and_conditions_page() {
 
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("Terms and conditions", Label); 
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/terms-and-conditions/", Label);
    
 }
 
 @Then("^user clicks on Privacy policy link$")
 public void user_clicks_on_Privacy_policy_link() {
     
-	driver.findElement(By.linkText("Privacy policy")).click();
+	driver.findElement(By.xpath("//a[@href='/privacy-policy/']")).click();
 }
 
 @Then("^user is redirected to Privacy policy page$")
 public void user_is_redirected_to_Privacy_policy_page() {
     
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("Privacy policy", Label); 
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://jobs.economist.com/privacy-policy/", Label); 
 }
 
 @Then("^user clicks on Refund policy link$")
 public void user_clicks_on_Refund_policy_link() {
-    
-	driver.findElement(By.linkText("Refund policy")).click();
+	driver.findElement(By.xpath("//a[@href='https://recruiters.jobs.economist.com/']")).click();
+	driver.findElement(By.xpath("//a[@href='/refund-policy/']")).click();
    
 }
 
 @Then("^user is redirected to Refund policy page$")
 public void user_is_redirected_to_Refund_policy_page() {
     
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("Refund policy", Label); 
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://recruiters.jobs.economist.com/refund-policy/", Label); 
    
 }
 
 @Then("^user clicks on Help link$")
 public void user_clicks_on_Help_link() {
     
-	driver.findElement(By.linkText("Help")).click();
+	driver.findElement(By.xpath("//a[@href='/static-page/270/Help/']")).click();
 }
 
 @Then("^user is redirected to Help page$")
 public void user_is_redirected_to_Help_page() {
     
-	String Label = driver.findElement(By.xpath("//h1[@class='strip no-margin']")).getText();
-	Assert.assertEquals("Help", Label); 
+	String Label = driver.getCurrentUrl();
+	Assert.assertEquals("https://recruiters.jobs.economist.com/static-page/270/Help/", Label); 
    
 }
 //@Then ("^Verify the user signed in$")
