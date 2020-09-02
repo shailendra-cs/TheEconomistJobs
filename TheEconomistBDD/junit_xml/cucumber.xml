@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="115.007597">
-<testcase classname="The Economist Jobs Page footer bar links" name="Jobs Page footer links Test" time="115.007597">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.046937">
+<testcase classname="Find a job on The Economist Jobs Board" name="Find a job Sector wise" time="25.046937">
 <system-out><![CDATA[Given user is already on Home Page of Jobs..................................passed
 When user clicks on Sign in link............................................passed
 Then user enters Sign in details "cool.shailendra@yahoo.com" and "test@123".passed
 Then user clicks on Sign in button..........................................passed
-Then user clicks on About us link...........................................passed
-Then user is redirected to About us page....................................passed
-Then user clicks on Contact us link.........................................passed
-Then user is redirected to Contact us page..................................passed
-Then user clicks on Terms and conditions link...............................passed
-Then user is redirected to Terms and conditions page........................passed
-Then user clicks on Privacy policy link.....................................passed
-Then user is redirected to Privacy policy page..............................passed
-Then user clicks on Refund policy link......................................passed
-Then user is redirected to Refund policy page...............................passed
-Then user clicks on Help link...............................................passed
-Then user is redirected to Help page........................................passed
+Then user clicks on Find a job link.........................................passed
+Then user is redirected to the jobs page....................................passed
+Then user clicks on the Banking and finance sector..........................passed
+Then user clicks on the each job of that sector.............................passed
+Then user getting details of that job.......................................passed
+Then user getting apply button..............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

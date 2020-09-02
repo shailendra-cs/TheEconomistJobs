@@ -77,16 +77,16 @@
     "line": 21,
     "elements": [
       {
-        "line": 45,
-        "name": "Jobs Page footer links Test",
+        "line": 40,
+        "name": "Find a job Sector wise",
         "description": "",
-        "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;2",
+        "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 21624884300,
+              "duration": 16632295500,
               "status": "passed"
             },
             "line": 25,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1939772500,
+              "duration": 1096113300,
               "status": "passed"
             },
             "line": 26,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 164480400,
+              "duration": 164247900,
               "status": "passed"
             },
             "line": 27,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 1910533700,
+              "duration": 75361000,
               "status": "passed"
             },
             "line": 28,
@@ -148,155 +148,83 @@
           },
           {
             "result": {
-              "duration": 1116367300,
+              "duration": 5087330600,
               "status": "passed"
             },
             "line": 29,
-            "name": "user clicks on About us link",
+            "name": "user clicks on Find a job link",
             "match": {
-              "location": "StepDefinition.user_clicks_on_About_us_link()"
+              "location": "StepDefinition.user_clicks_on_Find_a_job_link()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7139800,
+              "duration": 6311000,
               "status": "passed"
             },
             "line": 30,
-            "name": "user is redirected to About us page",
+            "name": "user is redirected to the jobs page",
             "match": {
-              "location": "StepDefinition.user_is_redirected_to_About_us_page()"
+              "location": "StepDefinition.user_is_redirected_to_the_jobs_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1459976400,
+              "duration": 1682898300,
               "status": "passed"
             },
             "line": 31,
-            "name": "user clicks on Contact us link",
+            "name": "user clicks on the Banking and finance sector",
             "match": {
-              "location": "StepDefinition.user_clicks_on_Contact_us_link()"
+              "location": "StepDefinition.user_clicks_on_the_Banking_and_finance_sector()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 88344400,
+              "duration": 302348300,
               "status": "passed"
             },
             "line": 32,
-            "name": "user is redirected to Contact us page",
+            "name": "user clicks on the each job of that sector",
             "match": {
-              "location": "StepDefinition.user_is_redirected_to_Contact_us_page()"
+              "location": "StepDefinition.user_clicks_on_the_each_job_of_that_sector()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1645948900,
+              "duration": 16300,
               "status": "passed"
             },
             "line": 33,
-            "name": "user clicks on Terms and conditions link",
+            "name": "user getting details of that job",
             "match": {
-              "location": "StepDefinition.user_clicks_on_Terms_and_conditions_link()"
+              "location": "StepDefinition.user_getting_details_of_that_job()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 98792600,
+              "duration": 14400,
               "status": "passed"
             },
             "line": 34,
-            "name": "user is redirected to Terms and conditions page",
+            "name": "user getting apply button",
             "match": {
-              "location": "StepDefinition.user_is_redirected_to_Terms_and_conditions_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 983829900,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "user clicks on Privacy policy link",
-            "match": {
-              "location": "StepDefinition.user_clicks_on_Privacy_policy_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 56556800,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "user is redirected to Privacy policy page",
-            "match": {
-              "location": "StepDefinition.user_is_redirected_to_Privacy_policy_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 55840757700,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "user clicks on Refund policy link",
-            "match": {
-              "location": "StepDefinition.user_clicks_on_Refund_policy_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 39372700,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "user is redirected to Refund policy page",
-            "match": {
-              "location": "StepDefinition.user_is_redirected_to_Refund_policy_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 27961646000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "user clicks on Help link",
-            "match": {
-              "location": "StepDefinition.user_clicks_on_Help_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 69193400,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "user is redirected to Help page",
-            "match": {
-              "location": "StepDefinition.user_is_redirected_to_Help_page()"
+              "location": "StepDefinition.user_getting_apply_button()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "The Economist Jobs Page footer bar links",
+    "name": "Find a job on The Economist Jobs Board",
     "description": "",
-    "id": "the-economist-jobs-page-footer-bar-links",
+    "id": "find-a-job-on-the-economist-jobs-board",
     "keyword": "Feature",
-    "uri": "C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/footerLinks.feature"
+    "uri": "C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/JobSector.feature"
   }
 ]

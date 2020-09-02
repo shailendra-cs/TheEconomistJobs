@@ -1,11 +1,14 @@
 package StepDefinitions;
 
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -116,8 +119,8 @@ public void user_clicks_on_Find_a_job_link() {
 		
 @Then("^user is redirected to the jobs page$")
 public void user_is_redirected_to_the_jobs_page() {
-	String jobsLabel = driver.findElement(By.xpath("//h1[contains(text(),'Found 27 jobs')]")).getText();
-	Assert.assertEquals("Found 27 jobs", jobsLabel);
+	String jobsLabel = driver.getTitle();
+	Assert.assertEquals("Browse jobs | Jobs.Economist.com", jobsLabel);
 }
 
 @Then("^user clicks on Jobs alerts link$")
@@ -153,6 +156,8 @@ public void user_is_redirected_to_the_Jobs_blog_page() {
 	String Label = driver.getCurrentUrl();
 	Assert.assertEquals("https://jobs.economist.com/careers/", Label);
 }
+
+
 
 
 @Then("^user clicks on About us link$")
@@ -239,11 +244,54 @@ public void user_is_redirected_to_Help_page() {
 	Assert.assertEquals("https://recruiters.jobs.economist.com/static-page/270/Help/", Label); 
    
 }
+
+
+
+@Then("^user clicks on the Banking and finance sector$")
+public void user_clicks_on_the_Banking_and_finance_sector() {
+    
+	driver.findElement(By.xpath("//a[contains(text(),'Banking and finance')]")).click();
+}
+
+
+
+@Then("^user clicks on the each job of that sector$")
+public void user_clicks_on_the_each_job_of_that_sector()  {
+    
+	List<WebElement> anchors = driver.findElements(By.xpath("//a[@class='js-clickable-area-link']"));
+	Iterator<WebElement> i = anchors.iterator();
+
+	while(i.hasNext()) {
+	    WebElement anchor = i.next();
+	    if(anchor.getAttribute("href").contains("href")) {
+	        anchor.click();
+	        break;
+	    }
+	}
+
+}
+
+@Then("^user getting details of that job$")
+public void user_getting_details_of_that_job()  {
+    
+    
+}
+
+@Then("^user getting apply button$")
+public void user_getting_apply_button()  {
+    
+    
+}
+
+
+
 //@Then ("^Verify the user signed in$")
 //public void Verify_the_user_signed_in() {
 //	String label3 = driver.findElement(By.xpath("//span[contains(@class,'user-nav__triangle icon-after')]")).getText();
 //	Assert.assertEquals("Shailendra Rajput", label3);
 //}
+
+
 
 
 }

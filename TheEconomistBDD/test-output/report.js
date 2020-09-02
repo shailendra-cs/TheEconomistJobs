@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/footerLinks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/JobSector.feature");
 formatter.feature({
   "comments": [
     {
@@ -75,16 +75,16 @@ formatter.feature({
     }
   ],
   "line": 21,
-  "name": "The Economist Jobs Page footer bar links",
+  "name": "Find a job on The Economist Jobs Board",
   "description": "",
-  "id": "the-economist-jobs-page-footer-bar-links",
+  "id": "find-a-job-on-the-economist-jobs-board",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 23,
-  "name": "Jobs Page footer links Test",
+  "name": "Find a job Sector wise",
   "description": "",
-  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test",
+  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -110,94 +110,64 @@ formatter.step({
 });
 formatter.step({
   "line": 29,
-  "name": "user clicks on About us link",
+  "name": "user clicks on Find a job link",
   "keyword": "Then "
 });
 formatter.step({
   "line": 30,
-  "name": "user is redirected to About us page",
+  "name": "user is redirected to the jobs page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 31,
-  "name": "user clicks on Contact us link",
+  "name": "user clicks on the Banking and finance sector",
   "keyword": "Then "
 });
 formatter.step({
   "line": 32,
-  "name": "user is redirected to Contact us page",
+  "name": "user clicks on the each job of that sector",
   "keyword": "Then "
 });
 formatter.step({
   "line": 33,
-  "name": "user clicks on Terms and conditions link",
+  "name": "user getting details of that job",
   "keyword": "Then "
 });
 formatter.step({
   "line": 34,
-  "name": "user is redirected to Terms and conditions page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
-  "name": "user clicks on Privacy policy link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 36,
-  "name": "user is redirected to Privacy policy page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 37,
-  "name": "user clicks on Refund policy link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 38,
-  "name": "user is redirected to Refund policy page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 39,
-  "name": "user clicks on Help link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 40,
-  "name": "user is redirected to Help page",
+  "name": "user getting apply button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 43,
+  "line": 38,
   "name": "",
   "description": "",
-  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;",
+  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;",
   "rows": [
     {
       "cells": [
         "email",
         "password"
       ],
-      "line": 44,
-      "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;1"
+      "line": 39,
+      "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;1"
     },
     {
       "cells": [
         "cool.shailendra@yahoo.com",
         "test@123"
       ],
-      "line": 45,
-      "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;2"
+      "line": 40,
+      "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 45,
-  "name": "Jobs Page footer links Test",
+  "line": 40,
+  "name": "Find a job Sector wise",
   "description": "",
-  "id": "the-economist-jobs-page-footer-bar-links;jobs-page-footer-links-test;;2",
+  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -227,76 +197,46 @@ formatter.step({
 });
 formatter.step({
   "line": 29,
-  "name": "user clicks on About us link",
+  "name": "user clicks on Find a job link",
   "keyword": "Then "
 });
 formatter.step({
   "line": 30,
-  "name": "user is redirected to About us page",
+  "name": "user is redirected to the jobs page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 31,
-  "name": "user clicks on Contact us link",
+  "name": "user clicks on the Banking and finance sector",
   "keyword": "Then "
 });
 formatter.step({
   "line": 32,
-  "name": "user is redirected to Contact us page",
+  "name": "user clicks on the each job of that sector",
   "keyword": "Then "
 });
 formatter.step({
   "line": 33,
-  "name": "user clicks on Terms and conditions link",
+  "name": "user getting details of that job",
   "keyword": "Then "
 });
 formatter.step({
   "line": 34,
-  "name": "user is redirected to Terms and conditions page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
-  "name": "user clicks on Privacy policy link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 36,
-  "name": "user is redirected to Privacy policy page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 37,
-  "name": "user clicks on Refund policy link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 38,
-  "name": "user is redirected to Refund policy page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 39,
-  "name": "user clicks on Help link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 40,
-  "name": "user is redirected to Help page",
+  "name": "user getting apply button",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefinition.user_is_already_on_Home_Page_of_Jobs()"
 });
 formatter.result({
-  "duration": 21624884300,
+  "duration": 16632295500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_Sign_in_link()"
 });
 formatter.result({
-  "duration": 1939772500,
+  "duration": 1096113300,
   "status": "passed"
 });
 formatter.match({
@@ -313,98 +253,56 @@ formatter.match({
   "location": "StepDefinition.user_enters_Sign_in_details_and(String,String)"
 });
 formatter.result({
-  "duration": 164480400,
+  "duration": 164247900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_Sign_in_button()"
 });
 formatter.result({
-  "duration": 1910533700,
+  "duration": 75361000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_clicks_on_About_us_link()"
+  "location": "StepDefinition.user_clicks_on_Find_a_job_link()"
 });
 formatter.result({
-  "duration": 1116367300,
+  "duration": 5087330600,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_About_us_page()"
+  "location": "StepDefinition.user_is_redirected_to_the_jobs_page()"
 });
 formatter.result({
-  "duration": 7139800,
+  "duration": 6311000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_clicks_on_Contact_us_link()"
+  "location": "StepDefinition.user_clicks_on_the_Banking_and_finance_sector()"
 });
 formatter.result({
-  "duration": 1459976400,
+  "duration": 1682898300,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_Contact_us_page()"
+  "location": "StepDefinition.user_clicks_on_the_each_job_of_that_sector()"
 });
 formatter.result({
-  "duration": 88344400,
+  "duration": 302348300,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_clicks_on_Terms_and_conditions_link()"
+  "location": "StepDefinition.user_getting_details_of_that_job()"
 });
 formatter.result({
-  "duration": 1645948900,
+  "duration": 16300,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_Terms_and_conditions_page()"
+  "location": "StepDefinition.user_getting_apply_button()"
 });
 formatter.result({
-  "duration": 98792600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Privacy_policy_link()"
-});
-formatter.result({
-  "duration": 983829900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_Privacy_policy_page()"
-});
-formatter.result({
-  "duration": 56556800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Refund_policy_link()"
-});
-formatter.result({
-  "duration": 55840757700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_Refund_policy_page()"
-});
-formatter.result({
-  "duration": 39372700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Help_link()"
-});
-formatter.result({
-  "duration": 27961646000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_Help_page()"
-});
-formatter.result({
-  "duration": 69193400,
+  "duration": 14400,
   "status": "passed"
 });
 });
