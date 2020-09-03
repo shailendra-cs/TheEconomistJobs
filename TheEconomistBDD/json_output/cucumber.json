@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16632295500,
+              "duration": 15140413100,
               "status": "passed"
             },
             "line": 25,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1096113300,
+              "duration": 1346288200,
               "status": "passed"
             },
             "line": 26,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 164247900,
+              "duration": 220299600,
               "status": "passed"
             },
             "line": 27,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 75361000,
+              "duration": 93012300,
               "status": "passed"
             },
             "line": 28,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 5087330600,
+              "duration": 1936175900,
               "status": "passed"
             },
             "line": 29,
@@ -160,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 6311000,
+              "duration": 173631900,
               "status": "passed"
             },
             "line": 30,
@@ -172,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 1682898300,
+              "duration": 688667900,
               "status": "passed"
             },
             "line": 31,
@@ -184,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 302348300,
+              "duration": 391234500,
               "status": "passed"
             },
             "line": 32,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 16300,
+              "duration": 15500,
               "status": "passed"
             },
             "line": 33,
@@ -208,13 +208,25 @@
           },
           {
             "result": {
-              "duration": 14400,
+              "duration": 12600,
               "status": "passed"
             },
             "line": 34,
             "name": "user getting apply button",
             "match": {
               "location": "StepDefinition.user_getting_apply_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4042648600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Close the browser",
+            "match": {
+              "location": "StepDefinition.close_the_browser()"
             },
             "keyword": "Then "
           }

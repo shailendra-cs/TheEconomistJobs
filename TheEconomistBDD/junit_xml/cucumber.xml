@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.046937">
-<testcase classname="Find a job on The Economist Jobs Board" name="Find a job Sector wise" time="25.046937">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.0324">
+<testcase classname="Find a job on The Economist Jobs Board" name="Find a job Sector wise" time="24.0324">
 <system-out><![CDATA[Given user is already on Home Page of Jobs..................................passed
 When user clicks on Sign in link............................................passed
 Then user enters Sign in details "cool.shailendra@yahoo.com" and "test@123".passed
@@ -11,6 +11,7 @@ Then user clicks on the Banking and finance sector..........................pass
 Then user clicks on the each job of that sector.............................passed
 Then user getting details of that job.......................................passed
 Then user getting apply button..............................................passed
+Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

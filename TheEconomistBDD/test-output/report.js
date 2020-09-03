@@ -138,6 +138,11 @@ formatter.step({
   "name": "user getting apply button",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 35,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
 formatter.examples({
   "line": 38,
   "name": "",
@@ -225,18 +230,23 @@ formatter.step({
   "name": "user getting apply button",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 35,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "StepDefinition.user_is_already_on_Home_Page_of_Jobs()"
 });
 formatter.result({
-  "duration": 16632295500,
+  "duration": 15140413100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_Sign_in_link()"
 });
 formatter.result({
-  "duration": 1096113300,
+  "duration": 1346288200,
   "status": "passed"
 });
 formatter.match({
@@ -253,56 +263,63 @@ formatter.match({
   "location": "StepDefinition.user_enters_Sign_in_details_and(String,String)"
 });
 formatter.result({
-  "duration": 164247900,
+  "duration": 220299600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_Sign_in_button()"
 });
 formatter.result({
-  "duration": 75361000,
+  "duration": 93012300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_Find_a_job_link()"
 });
 formatter.result({
-  "duration": 5087330600,
+  "duration": 1936175900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_is_redirected_to_the_jobs_page()"
 });
 formatter.result({
-  "duration": 6311000,
+  "duration": 173631900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_the_Banking_and_finance_sector()"
 });
 formatter.result({
-  "duration": 1682898300,
+  "duration": 688667900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_clicks_on_the_each_job_of_that_sector()"
 });
 formatter.result({
-  "duration": 302348300,
+  "duration": 391234500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_getting_details_of_that_job()"
 });
 formatter.result({
-  "duration": 16300,
+  "duration": 15500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_getting_apply_button()"
 });
 formatter.result({
-  "duration": 14400,
+  "duration": 12600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.close_the_browser()"
+});
+formatter.result({
+  "duration": 4042648600,
   "status": "passed"
 });
 });

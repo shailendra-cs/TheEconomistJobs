@@ -32,7 +32,7 @@ Then user clicks on the Banking and finance sector
 Then user clicks on the each job of that sector
 Then user getting details of that job
 Then user getting apply button
-
+Then Close the browser
 
 
 Examples:

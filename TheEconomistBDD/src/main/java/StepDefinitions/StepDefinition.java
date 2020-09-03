@@ -263,8 +263,9 @@ public void user_clicks_on_the_each_job_of_that_sector()  {
 
 	while(i.hasNext()) {
 	    WebElement anchor = i.next();
-	    if(anchor.getAttribute("href").contains("href")) {
+	    if(anchor.getAttribute("href").contains("/job/*")) {
 	        anchor.click();
+	        System.out.println("Clicking link" + anchor.getText());
 	        break;
 	    }
 	}
