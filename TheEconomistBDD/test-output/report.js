@@ -1,193 +1,292 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/JobSector.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shailendra/git/TheEconomistJobs/TheEconomistBDD/src/main/java/Features/login.feature");
 formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#Author: your.email@your.domain.com"
-    },
-    {
-      "line": 2,
-      "value": "#Keywords Summary :"
-    },
-    {
-      "line": 3,
-      "value": "#Feature: List of scenarios."
-    },
-    {
-      "line": 4,
-      "value": "#Scenario: Business rule through list of steps with arguments."
-    },
-    {
-      "line": 5,
-      "value": "#Given: Some precondition step"
-    },
-    {
-      "line": 6,
-      "value": "#When: Some key actions"
-    },
-    {
-      "line": 7,
-      "value": "#Then: To observe outcomes or validation"
-    },
-    {
-      "line": 8,
-      "value": "#And,But: To enumerate more Given,When,Then steps"
-    },
-    {
-      "line": 9,
-      "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
-    },
-    {
-      "line": 10,
-      "value": "#Examples: Container for s table"
-    },
-    {
-      "line": 11,
-      "value": "#Background: List of steps run before each of the scenarios"
-    },
-    {
-      "line": 12,
-      "value": "#\"\"\" (Doc Strings)"
-    },
-    {
-      "line": 13,
-      "value": "#| (Data Tables)"
-    },
-    {
-      "line": 14,
-      "value": "#@ (Tags/Labels):To group Scenarios"
-    },
-    {
-      "line": 15,
-      "value": "#\u003c\u003e (placeholder)"
-    },
-    {
-      "line": 16,
-      "value": "#\"\""
-    },
-    {
-      "line": 17,
-      "value": "## (Comments)"
-    },
-    {
-      "line": 18,
-      "value": "#Sample Feature Definition Template"
-    }
-  ],
-  "line": 21,
-  "name": "Find a job on The Economist Jobs Board",
+  "line": 1,
+  "name": "The Economist Sign In Feature",
   "description": "",
-  "id": "find-a-job-on-the-economist-jobs-board",
+  "id": "the-economist-sign-in-feature",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 23,
-  "name": "Find a job Sector wise",
+  "comments": [
+    {
+      "line": 4,
+      "value": "#without Examples Keyword"
+    },
+    {
+      "line": 5,
+      "value": "#Scenario: Jobs Sign In Test Scenario"
+    },
+    {
+      "line": 6,
+      "value": "#"
+    },
+    {
+      "line": 7,
+      "value": "#Given user is already on Home Page of Jobs"
+    },
+    {
+      "line": 8,
+      "value": "#When title of home page is Jobs.Economist.com | jobs | Choose from 28 live vacancies"
+    },
+    {
+      "line": 9,
+      "value": "#When user clicks on Sign in link"
+    },
+    {
+      "line": 10,
+      "value": "#Then user is on Sign In page"
+    },
+    {
+      "line": 13,
+      "value": "#with Examples Keyword"
+    }
+  ],
+  "line": 16,
+  "name": "Create account link Test Scenario",
   "description": "",
-  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise",
+  "id": "the-economist-sign-in-feature;create-account-link-test-scenario",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 25,
+  "line": 18,
   "name": "user is already on Home Page of Jobs",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 26,
-  "name": "user clicks on Sign in link",
+  "line": 19,
+  "name": "user clicks on Create account link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 27,
-  "name": "user enters Sign in details \"\u003cemail\u003e\" and \"\u003cpassword\u003e\"",
+  "line": 20,
+  "name": "user is on Create account page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 28,
-  "name": "user clicks on Sign in button",
+  "line": 21,
+  "name": "user enters new account details \"\u003ctitle\u003e\" and \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cemail\u003e\" and \"\u003cpassword\u003e\" and \"\u003cconfirmpass\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
-  "name": "user clicks on Find a job link",
+  "line": 22,
+  "name": "user clicks on Create an account button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
-  "name": "user is redirected to the jobs page",
+  "line": 23,
+  "name": "Verify user account get created",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 31,
-  "name": "user clicks on the Banking and finance sector",
+  "line": 24,
+  "name": "user clicks on Sign Out link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 32,
-  "name": "user clicks on the each job of that sector",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "user getting details of that job",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 34,
-  "name": "user getting apply button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
+  "line": 25,
   "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 38,
+  "line": 27,
   "name": "",
   "description": "",
-  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;",
+  "id": "the-economist-sign-in-feature;create-account-link-test-scenario;",
+  "rows": [
+    {
+      "cells": [
+        "title",
+        "firstname",
+        "lastname",
+        "email",
+        "password",
+        "confirmpass"
+      ],
+      "line": 28,
+      "id": "the-economist-sign-in-feature;create-account-link-test-scenario;;1"
+    },
+    {
+      "cells": [
+        "Mr.",
+        "Shailendra",
+        "Rajput",
+        "cool.shailendra@yahoo.com",
+        "test@123",
+        "test@123"
+      ],
+      "line": 29,
+      "id": "the-economist-sign-in-feature;create-account-link-test-scenario;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 29,
+  "name": "Create account link Test Scenario",
+  "description": "",
+  "id": "the-economist-sign-in-feature;create-account-link-test-scenario;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 18,
+  "name": "user is already on Home Page of Jobs",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user clicks on Create account link",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 20,
+  "name": "user is on Create account page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "user enters new account details \"Mr.\" and \"Shailendra\" and \"Rajput\" and \"cool.shailendra@yahoo.com\" and \"test@123\" and \"test@123\"",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "user clicks on Create an account button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "Verify user account get created",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "user clicks on Sign Out link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenarioOutline({
+  "line": 32,
+  "name": "Sign In link Test Scenario",
+  "description": "",
+  "id": "the-economist-sign-in-feature;sign-in-link-test-scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 34,
+  "name": "user is already on Home Page of Jobs",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 35,
+  "name": "user clicks on Sign in link",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 36,
+  "name": "user enters Sign in details \"\u003cemail\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "user clicks on Sign in button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 42,
+  "name": "",
+  "description": "",
+  "id": "the-economist-sign-in-feature;sign-in-link-test-scenario;",
   "rows": [
     {
       "cells": [
         "email",
         "password"
       ],
-      "line": 39,
-      "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;1"
+      "line": 43,
+      "id": "the-economist-sign-in-feature;sign-in-link-test-scenario;;1"
     },
     {
       "cells": [
         "cool.shailendra@yahoo.com",
         "test@123"
       ],
-      "line": 40,
-      "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;2"
+      "line": 44,
+      "id": "the-economist-sign-in-feature;sign-in-link-test-scenario;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 40,
-  "name": "Find a job Sector wise",
+  "line": 44,
+  "name": "Sign In link Test Scenario",
   "description": "",
-  "id": "find-a-job-on-the-economist-jobs-board;find-a-job-sector-wise;;2",
+  "id": "the-economist-sign-in-feature;sign-in-link-test-scenario;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 25,
+  "line": 34,
   "name": "user is already on Home Page of Jobs",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 26,
+  "line": 35,
   "name": "user clicks on Sign in link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 27,
+  "line": 36,
   "name": "user enters Sign in details \"cool.shailendra@yahoo.com\" and \"test@123\"",
   "matchedColumns": [
     0,
@@ -196,130 +295,33 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 28,
+  "line": 37,
   "name": "user clicks on Sign in button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
-  "name": "user clicks on Find a job link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
-  "name": "user is redirected to the jobs page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
-  "name": "user clicks on the Banking and finance sector",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 32,
-  "name": "user clicks on the each job of that sector",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "user getting details of that job",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 34,
-  "name": "user getting apply button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
+  "line": 38,
   "name": "Close the browser",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "StepDefinition.user_is_already_on_Home_Page_of_Jobs()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 15140413100,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Sign_in_link()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1346288200,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "cool.shailendra@yahoo.com",
-      "offset": 29
-    },
-    {
-      "val": "test@123",
-      "offset": 61
-    }
-  ],
-  "location": "StepDefinition.user_enters_Sign_in_details_and(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 220299600,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Sign_in_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 93012300,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_Find_a_job_link()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1936175900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_is_redirected_to_the_jobs_page()"
-});
-formatter.result({
-  "duration": 173631900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_the_Banking_and_finance_sector()"
-});
-formatter.result({
-  "duration": 688667900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_clicks_on_the_each_job_of_that_sector()"
-});
-formatter.result({
-  "duration": 391234500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_getting_details_of_that_job()"
-});
-formatter.result({
-  "duration": 15500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_getting_apply_button()"
-});
-formatter.result({
-  "duration": 12600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 4042648600,
-  "status": "passed"
+  "status": "undefined"
 });
 });

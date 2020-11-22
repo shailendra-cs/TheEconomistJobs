@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.0324">
-<testcase classname="Find a job on The Economist Jobs Board" name="Find a job Sector wise" time="24.0324">
-<system-out><![CDATA[Given user is already on Home Page of Jobs..................................passed
-When user clicks on Sign in link............................................passed
-Then user enters Sign in details "cool.shailendra@yahoo.com" and "test@123".passed
-Then user clicks on Sign in button..........................................passed
-Then user clicks on Find a job link.........................................passed
-Then user is redirected to the jobs page....................................passed
-Then user clicks on the Banking and finance sector..........................passed
-Then user clicks on the each job of that sector.............................passed
-Then user getting details of that job.......................................passed
-Then user getting apply button..............................................passed
-Then Close the browser......................................................passed
-]]></system-out>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
+<testcase classname="The Economist Sign In Feature" name="Create account link Test Scenario" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already on Home Page of Jobs..................................undefined
+When user clicks on Create account link.....................................undefined
+Then user is on Create account page.........................................undefined
+Then user enters new account details "Mr." and "Shailendra" and "Rajput" and "cool.shailendra@yahoo.com" and "test@123" and "test@123".undefined
+Then user clicks on Create an account button................................undefined
+Then Verify user account get created........................................undefined
+Then user clicks on Sign Out link...........................................undefined
+Then Close the browser......................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="The Economist Sign In Feature" name="Sign In link Test Scenario" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already on Home Page of Jobs..................................undefined
+When user clicks on Sign in link............................................undefined
+Then user enters Sign in details "cool.shailendra@yahoo.com" and "test@123".undefined
+Then user clicks on Sign in button..........................................undefined
+Then Close the browser......................................................undefined
+]]></failure>
 </testcase>
 </testsuite>
